@@ -1,0 +1,37 @@
+.contests {
+  .contest-item {
+    border: 1px solid rgba(192, 191, 200, 0.8);
+    img {
+      min-height: 235px;
+      object-fit: cover;
+    }
+    &__content {
+      padding: 26px 71px 57px 26px;
+    }
+    &__date {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: $clr-orange;
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  &__load-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0;
+    background: #f8f8f8;
+    border-radius: 2px;
+    margin-bottom: 64px;
+    color: $clr-blue;
+    font-size: 18px;
+    img {
+      margin-right: 16px;
+    }
+  }
+}

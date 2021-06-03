@@ -12,3 +12,28 @@ body {
   font-size: 18px;
   margin-bottom: 16px;
 }
+.page-title {
+  background: $clr-blue;
+  padding-bottom: 32px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Gotham", sans-serif;
+  color: #fff;
+}
+.timeline {
+  padding: 16px 0 32px;
+  font-size: 11px;
+  line-height: 15px;
+  display: flex;
+  & > * {
+    &:not(:last-child) {
+      display: flex;
+      align-items: center;
+      &::after {
+        content: "/";
+        margin: 0 5px;
+      }
+    }
+  }
+}
