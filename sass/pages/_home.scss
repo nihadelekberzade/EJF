@@ -231,6 +231,7 @@
     }
   }
   .events {
+    padding-bottom: 80px;
     .event-item {
       &__content {
         padding: 20px;
@@ -244,8 +245,7 @@
     }
   }
   .partners {
-    padding: 100px 0;
-
+    padding-bottom: 80px;
     &-slider {
       display: flex;
       min-height: 283px;
