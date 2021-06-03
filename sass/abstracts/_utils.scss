@@ -1,0 +1,40 @@
+.txt-center {
+  text-align: center;
+}
+.mb-small {
+  margin-bottom: 5px;
+}
+.mb-medium {
+  margin-bottom: 12px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.inline-block {
+  display: inline-block;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+.three-columns {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 24px;
+  }
+}
+.four-columns {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 24px;
+  }
+}

@@ -1,0 +1,18 @@
+%btn {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  padding: 12px 46px;
+  border-radius: 4px;
+}
+.btn-primary {
+  @extend %btn;
+  background: $clr-white;
+  color: $clr-blue;
+}
+.btn-secondary {
+  @extend %btn;
+  background-color: $clr-orange;
+  color: #fff;
+  padding: 15px 16px;
+}
