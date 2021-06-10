@@ -1,2 +1,52 @@
 .partners {
+  padding-bottom: 72px;
+  .partner {
+    &__title {
+      margin-bottom: 32px;
+    }
+    &-list {
+      margin-bottom: 64px;
+      ul {
+        display: flex;
+      }
+      li:not(:last-child) {
+        margin-right: 90px;
+      }
+      &--official {
+        ul {
+          display: block;
+        }
+        li:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 56px;
+        }
+      }
+    }
+    &-item {
+      display: flex;
+      &__img {
+        flex-basis: 255px;
+        margin-right: 40px;
+      }
+      &__content {
+        flex: 1;
+      }
+      &__title {
+        font-size: 26px;
+        margin-bottom: 16px;
+        font-weight: 400;
+      }
+      &__txt {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #5daec0;
+        margin-bottom: 16px;
+      }
+      &__bottom {
+        font-size: 13px;
+        span {
+          color: $clr-blue;
+        }
+      }
+    }
+  }
 }

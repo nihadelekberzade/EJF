@@ -1,0 +1,134 @@
+.news {
+  padding-bottom: 94px;
+  .timeline {
+    padding: 14px 0 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  & &__layout {
+    display: flex;
+  }
+  & &-date {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: $clr-blue;
+  }
+  & &-title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  &__left {
+    flex: 1;
+    margin-right: 20px;
+  }
+  & .img-block {
+    padding-bottom: 25px;
+    img {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: $clr-grey;
+    }
+  }
+  & &__right {
+    flex-basis: 413px;
+    aside:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  & &-block {
+    padding: 35px 25px;
+    border: 2px solid #f8f8f8;
+    border-radius: 2px;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 36px;
+      h2 {
+        font-size: 18px;
+      }
+      button,
+      a {
+        padding: 9px 18px;
+        background: #f8f8f8;
+        border: 1px solid #efefef;
+        border-radius: 2px;
+        color: $clr-blue;
+        font-size: 10px;
+      }
+    }
+    &-item {
+      display: flex;
+      &__content {
+        margin-left: 15px;
+      }
+      small {
+        display: inline-block;
+        color: $clr-grey;
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    &-list {
+      li:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &-about {
+    background: #f8f8f8;
+    border: 2px solid #f69740;
+    border-radius: 2px;
+    padding: 35px 25px 56px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    &__subtitle {
+      font-size: 10px;
+      color: $clr-grey;
+      margin-bottom: 10px;
+    }
+  }
+  &-form {
+    padding: 35px 25px;
+    background-color: $clr-white;
+    border-radius: 2px;
+    form {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #f2f3f3;
+      margin-bottom: 40px;
+      .form-group {
+        display: flex;
+        min-height: 65px;
+        input {
+          padding: 0 33px;
+        }
+        button {
+          background-color: $clr-orange;
+          padding: 25px;
+        }
+      }
+    }
+    &__title {
+      font-size: 18px;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+    &__list {
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+      li:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

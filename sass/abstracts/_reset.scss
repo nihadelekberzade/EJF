@@ -5,8 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul,
-ol {
+ul {
   list-style: none;
 }
 a {
@@ -30,6 +29,7 @@ button {
 }
 input {
   color: inherit;
+  width: 100%;
 }
 button {
   cursor: pointer;

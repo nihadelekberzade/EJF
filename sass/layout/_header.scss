@@ -56,4 +56,56 @@
   &__btn {
     margin: 0 24px 0 40px;
   }
+  .lang-select {
+    position: relative;
+    &__header {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &::after {
+        content: "";
+        margin-left: 10px;
+        width: 9px;
+        height: 4px;
+        background: no-repeat url("../../img/header/langArrow.svg") center;
+        background-size: cover;
+      }
+    }
+  }
+  .lang-list {
+    border-radius: 2px;
+    z-index: 1000;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 80px;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 42px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      transform: rotate(45deg);
+    }
+    &--show {
+      opacity: 1;
+      visibility: visible;
+    }
+    li {
+      cursor: pointer;
+      padding: 8px 0;
+      text-align: center;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
 }

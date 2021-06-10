@@ -1,0 +1,91 @@
+.programme {
+  padding-bottom: 80px;
+  .tabs {
+    display: flex;
+    margin-bottom: 32px;
+    .tab {
+      font-size: 15px;
+      color: #343434;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      border-bottom: 2px solid transparent;
+      &:not(:last-child) {
+        margin-right: 59px;
+      }
+      &--active {
+        color: $clr-blue;
+        border-color: $clr-blue;
+      }
+    }
+  }
+  .date-tabs {
+    display: flex;
+    margin-bottom: 40px;
+    .date-tab {
+      padding: 16px;
+      font-size: 15px;
+      border-radius: 2px;
+      &:not(:last-child) {
+        margin-right: 22px;
+      }
+      &--active {
+        color: $clr-white;
+        background: $clr-orange;
+      }
+    }
+  }
+  &-list {
+    & > li:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+  &-item {
+    display: flex;
+    &__date {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+    &__time {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    &__subtitle {
+      font-size: 18px;
+    }
+    &__left {
+      flex-basis: 13%;
+      margin-right: 5%;
+      color: #343434;
+    }
+    &__right {
+      flex: 1;
+    }
+    &__title {
+      font-size: 26px;
+      margin-bottom: 16px;
+      font-weight: 400;
+      color: #343434;
+    }
+    &__txt {
+      padding-bottom: 16px;
+      border-bottom: 1px solid $clr-blue;
+      margin-bottom: 14px;
+    }
+  }
+  .speaker {
+    &-list {
+      &__title {
+        margin-bottom: 16px;
+      }
+      li {
+        font-size: 15px;
+        a {
+          color: $clr-blue;
+        }
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
