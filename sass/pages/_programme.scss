@@ -1,4 +1,4 @@
-.programme {
+.programmes {
   padding-bottom: 80px;
   .tabs {
     display: flex;
@@ -39,37 +39,39 @@
       margin-bottom: 48px;
     }
   }
-  &-item {
-    display: flex;
-    &__date {
-      font-size: 26px;
-      margin-bottom: 16px;
-    }
-    &__time {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-    &__subtitle {
-      font-size: 18px;
-    }
-    &__left {
-      flex-basis: 13%;
-      margin-right: 5%;
-      color: #343434;
-    }
-    &__right {
-      flex: 1;
-    }
-    &__title {
-      font-size: 26px;
-      margin-bottom: 16px;
-      font-weight: 400;
-      color: #343434;
-    }
-    &__txt {
-      padding-bottom: 16px;
-      border-bottom: 1px solid $clr-blue;
-      margin-bottom: 14px;
+  .programme {
+    &-item {
+      display: flex;
+      &__date {
+        font-size: 26px;
+        margin-bottom: 16px;
+      }
+      &__time {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      &__subtitle {
+        font-size: 18px;
+      }
+      &__left {
+        flex-basis: 13%;
+        margin-right: 5%;
+        color: #343434;
+      }
+      &__right {
+        flex: 1;
+      }
+      &__title {
+        font-size: 26px;
+        margin-bottom: 16px;
+        font-weight: 400;
+        color: #343434;
+      }
+      &__txt {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $clr-blue;
+        margin-bottom: 14px;
+      }
     }
   }
   .speaker {

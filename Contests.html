@@ -9,127 +9,169 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-upper flex items-center justify-space-between">
-          <div class="header-upper-first flex">
-            <img src="./img/header/emblem1.png" alt="emblem1" />
-            <img src="./img/header/emblem2.png" alt="emblem2" />
-            <img src="./img/header/emblem3.png" alt="emblem3" />
-          </div>
-          <div class="header-upper-second">
-            <a href="+7 (495) 640 4440"> +7 (495) 640 4440 </a>
-            <div class="header-upper-socials">
-              <a href="#">
-                <img src="./img/header/socials/Facebook.svg" alt="facebook" />
-              </a>
-              <a href="#">
-                <img src="./img/header/socials/Vkontakte.svg" alt="vkontakte" />
-              </a>
-              <a href="#">
-                <img src="./img/header/socials/Twitter.svg" alt="twitter" />
-              </a>
-              <a href="#">
-                <img src="./img/header/socials/Youtube.svg" alt="youtube" />
-              </a>
-              <a href="#">
-                <img src="./img/header/socials/Instagram.svg" alt="instagram" />
-              </a>
-              <a href="#">
-                <img src="./img/header/socials/Telegram.svg" alt="telegram" />
-              </a>
-            </div>
-            <button class="header__btn btn-primary">Регистрация</button>
-            <div class="lang-select">
-              <div class="lang-select__header">
-                <p>RU</p>
+      <div class="header__inner">
+        <div class="header-upper">
+          <div class="container">
+            <div class="header-upper__inner">
+              <div class="header-upper-first flex">
+                <img src="./img/header/emblem1.png" alt="emblem1" />
+                <img class="remove-if-less-500" src="./img/header/emblem2.png" alt="emblem2" />
+                <img class="remove-if-less-500" src="./img/header/emblem3.png" alt="emblem3" />
               </div>
-              <div class="lang-list">
+              <div class="header-upper-second">
+                <a class="header__phone" href="+7 (495) 640 4440"> +7 (495) 640 4440 </a>
+                <div class="header-upper-socials">
+                  <a href="#">
+                    <img src="./img/header/socials/Facebook.svg" alt="facebook" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/header/socials/Vkontakte.svg" alt="vkontakte" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/header/socials/Twitter.svg" alt="twitter" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/header/socials/Youtube.svg" alt="youtube" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/header/socials/Instagram.svg" alt="instagram" />
+                  </a>
+                  <a href="#">
+                    <img src="./img/header/socials/Telegram.svg" alt="telegram" />
+                  </a>
+                </div>
+                <button class="header__btn btn-primary">Регистрация</button>
+                <div class="lang-select">
+                  <div class="lang-select__header">
+                    <p>RU</p>
+                  </div>
+                  <div class="lang-list">
+                    <ul>
+                      <li>
+                        <p>RU</p>
+                      </li>
+                      <li>
+                        <p>FR</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-menu">
+              <nav>
                 <ul>
                   <li>
-                    <p>RU</p>
+                    <div class="dropdown">
+                      <a href="#">Новости</a>
+                      <div class="dropdown-content">
+                        <ul class="submenu__list">
+                          <li>
+                            <a href="#"> Тематика конгресса </a>
+                          </li>
+                          <li>
+                            <a href="#"> Организаторам </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </li>
                   <li>
-                    <p>FR</p>
+                    <a href="#">Фотогалерея</a>
+                  </li>
+                  <li>
+                    <a href="#">СМИ</a>
+                  </li>
+                  <li>
+                    <a href="#">Пресс-центр </a>
                   </li>
                 </ul>
-              </div>
+              </nav>
             </div>
           </div>
         </div>
-        <div class="header-lower flex items-start justify-space-between">
-          <div class="header__logo">
-            <img src="./img/header/headerLogo.png" alt="logo" />
-          </div>
-          <div class="header-lower-second">
-            <nav class="menu">
-              <ul>
-                <li>
-                  <a href="#">О Форуме</a>
-                  <div class="submenu">
-                    <ul class="submenu__list">
-                      <li>
-                        <a href="#"> Тематика конгресса </a>
-                      </li>
-                      <li>
-                        <a href="#"> Организаторам </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">Программа</a>
-                  <div class="submenu">
-                    <ul class="submenu__list">
-                      <li>
-                        <a href="#"> Тематика конгресса </a>
-                      </li>
-                      <li>
-                        <a href="#"> Организаторам </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">Участникам</a>
-                </li>
-                <li>
-                  <a href="#">Партнеры</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-                <li>
-                  <a href="#">Личный кабинет</a>
-                </li>
-              </ul>
-            </nav>
-            <nav class="menu">
-              <ul>
-                <li>
-                  <a href="#">Новости</a>
-                </li>
-                <li>
-                  <a href="#">Фотогалерея</a>
-                </li>
-                <li>
-                  <a href="#">СМИ</a>
-                </li>
-                <li>
-                  <a href="#">Пресс-центр </a>
-                </li>
-              </ul>
-            </nav>
+        <div class="header-lower">
+          <div class="container">
+            <div class="header-lower__inner">
+              <div class="header__logo">
+                <img src="./img/header/headerLogo.png" alt="logo" />
+              </div>
+              <div class="header-lower-second">
+                <nav class="menu">
+                  <ul>
+                    <li>
+                      <a href="#">О Форуме</a>
+                      <div class="submenu">
+                        <ul class="submenu__list">
+                          <li>
+                            <a href="#"> Тематика конгресса </a>
+                          </li>
+                          <li>
+                            <a href="#"> Организаторам </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Программа</a>
+                      <div class="submenu">
+                        <ul class="submenu__list">
+                          <li>
+                            <a href="#"> Тематика конгресса </a>
+                          </li>
+                          <li>
+                            <a href="#"> Организаторам </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">Участникам</a>
+                    </li>
+                    <li>
+                      <a href="#">Партнеры</a>
+                    </li>
+                    <li>
+                      <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                      <a href="#">Личный кабинет</a>
+                    </li>
+                  </ul>
+                </nav>
+                <nav class="menu">
+                  <ul>
+                    <li>
+                      <a href="#">Новости</a>
+                    </li>
+                    <li>
+                      <a href="#">Фотогалерея</a>
+                    </li>
+                    <li>
+                      <a href="#">СМИ</a>
+                    </li>
+                    <li>
+                      <a href="#">Пресс-центр </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__mobile-toggle">Menu</div>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
     <main class="contests">
       <h2 class="page-title">Конкурсы</h2>
       <div class="container">
         <div class="timeline">
           <a href="#"> Главная </a>
-          <a href="#"> Конкурсы </a>
+          <a href="#">Партнеры</a>
         </div>
+      </div>
+      <div class="container">
         <div class="three-columns mb-24">
           <ul>
             <li>

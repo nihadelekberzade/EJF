@@ -10,16 +10,16 @@ const sliderBtnNext = document.querySelector('.home .partners .slider__btn--next
 sliderBtnPrev.addEventListener('click', () => {
     if (index > 0) {
         index--;
-        shiftSlider(index);
+        shiftSlider();
     }
 })
 sliderBtnNext.addEventListener('click', () => {
     if (index < elementCount - 6) {
         index++;
-        shiftSlider(index);
+        shiftSlider();
     }
 })
 
-const shiftSlider = (newIndex) => {
-    carousel.style.transform = `translateX(-${newIndex / elementCount * 100}%)`
+const shiftSlider = () => {
+    carousel.style.transform = `translateX(-${index / elementCount * 100}%)`
 }

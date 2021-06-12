@@ -1,6 +1,5 @@
 .footer {
   background-color: #f1f1f1;
-
   color: #848f9a;
   &-upper {
     display: flex;
@@ -44,5 +43,18 @@
   &-lower {
     text-align: center;
     padding: 24px 0 44px;
+  }
+  @media only screen and (max-width: 500px) {
+    &-upper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      p {
+        text-align: center;
+      }
+    }
+    &__logo {
+      margin: 0 auto;
+    }
   }
 }

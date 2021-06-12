@@ -1,10 +1,63 @@
 .header {
-  background-color: $clr-blue;
   color: #fff;
   font-size: 13px;
+  &__inner {
+    background-color: $clr-blue;
+  }
+  &__mobile-toggle {
+    display: none;
+    cursor: pointer;
+    & > div {
+      width: 20px;
+      padding: 1px 0;
+      height: 2px;
+      background: #fff;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .mobile-menu {
+    display: none;
+    .drop {
+      overflow: hidden;
+      .drop-header {
+        display: flex;
+        align-items: center;
+        &::after {
+          content: "";
+          background: no-repeat url("../../img/header/langArrow.svg") center;
+          width: 9px;
+          height: 4px;
+          margin-left: 5px;
+          transition: transform 0.3s;
+          transform: rotateZ(180deg);
+        }
+      }
+      .drop-content {
+        padding-left: 15px;
+        height: 0;
+      }
+      &--active .drop-header::after {
+        transform: rotateZ(0);
+      }
+      &--active .drop-content {
+        height: auto;
+      }
+    }
+  }
   &-upper {
-    padding-top: 3px;
-    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    transition: 0.3s;
+    &--full {
+      height: 100vh;
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2);
+    }
     &-first {
       display: flex;
       align-items: center;
@@ -26,8 +79,13 @@
     }
   }
   &-lower {
-    min-height: 128px;
-    align-items: center;
+    position: relative;
+    z-index: 1000;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     &-second {
       flex-basis: 809px;
       align-self: start;
@@ -156,6 +214,77 @@
       &:hover {
         opacity: 0.7;
       }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    &-upper-socials,
+    &__phone,
+    &-lower-second {
+      display: none;
+    }
+    &-lower__inner {
+      padding-top: 7px;
+    }
+    &__mobile-toggle {
+      display: block;
+      div {
+        transition: all 0.3s;
+        transform-origin: left;
+      }
+      &--active {
+        div {
+          &:first-child {
+            transform: rotateZ(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            transform: rotateZ(-45deg);
+          }
+        }
+      }
+    }
+    &__logo {
+      width: 180px;
+    }
+    &__inner {
+      background-color: initial;
+    }
+    &-upper {
+      background-color: $clr-blue;
+      &__inner {
+        position: relative;
+        z-index: 1500;
+      }
+    }
+    .remove-if-less-500 {
+      display: none;
+    }
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10vh;
+      display: grid;
+      place-content: center;
+      font-size: 25px;
+      transition: 0.3s;
+      background: $clr-blue;
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      &--active {
+        visibility: visible;
+        opacity: 1;
+        z-index: 100;
+        height: 100vh;
+      }
+    }
+    &__btn {
+      padding: 6px 12px;
+      margin-left: 0;
     }
   }
 }
