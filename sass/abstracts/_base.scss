@@ -21,6 +21,7 @@ p {
   display: flex;
   align-items: center;
   color: $clr-orange;
+  font-weight: 500;
   &::after {
     content: "";
     width: 6px;

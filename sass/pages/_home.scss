@@ -13,6 +13,7 @@
     }
     .btn-primary {
       margin-right: 48px;
+      font-size: 17px;
     }
     &__btn {
       display: flex;
@@ -20,6 +21,7 @@
       padding: 11px 20px;
       background: $clr-orange;
       text-align: left;
+      font-weight: 500;
       border-radius: 4px;
       &::before {
         content: "";
