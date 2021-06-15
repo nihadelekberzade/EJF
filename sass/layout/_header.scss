@@ -1,6 +1,6 @@
 .header {
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
   &__inner {
     background-color: $clr-blue;
   }
@@ -139,7 +139,6 @@
         display: flex;
         justify-content: flex-end;
       }
-      padding: 17px 0 15.5px;
       & > ul > li {
         position: relative;
         padding: 20px 0;
