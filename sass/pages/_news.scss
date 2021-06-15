@@ -146,5 +146,18 @@
     &__left {
       margin: 0 0 20px;
     }
+    & &-block {
+      padding: 15px 10px;
+    }
+    & &-about {
+      padding: 25px 15px;
+
+      h2 {
+        margin-bottom: 8px;
+      }
+    }
+    & .form-group {
+      max-height: 25px;
+    }
   }
 }

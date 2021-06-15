@@ -156,8 +156,8 @@
       position: relative;
       img {
         width: 100%;
+        height: 324px;
         object-fit: cover;
-        min-height: 324px;
       }
       &__content {
         position: absolute;
@@ -194,8 +194,8 @@
     &-item {
       img {
         width: 100%;
+        height: 235px;
         object-fit: cover;
-        min-height: 235px;
       }
       &__name {
         font-size: 21px;
@@ -237,7 +237,7 @@
         color: #fff;
         img {
           width: 100%;
-          min-height: 240px;
+          height: 240px;
           object-fit: cover;
         }
         &__content {
@@ -263,7 +263,7 @@
     .event-item {
       img {
         width: 100%;
-        min-height: 240px;
+        height: 240px;
         object-fit: cover;
       }
       &__content {
@@ -374,12 +374,7 @@
     .projects,
     .events {
       .container {
-        max-width: 100%;
         padding: 0;
-      }
-      img {
-        width: 100%;
-        min-height: 355px;
       }
     }
     .speaker,
@@ -388,6 +383,11 @@
     .projects,
     .events {
       padding-bottom: 50px;
+    }
+    .programme .programme-item img,
+    .projects .project-item img,
+    .events .event-item img {
+      height: 78vw;
     }
     .forum__inner {
       padding: 20px 10px;
@@ -402,13 +402,5 @@
       max-width: 180px;
       margin: 0 auto;
     }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .three-columns ul {
-    grid-template-columns: 1fr;
-  }
-  .four-columns ul {
-    grid-template-columns: 1fr;
   }
 }

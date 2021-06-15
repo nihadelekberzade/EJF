@@ -1,0 +1,24 @@
+.three-columns {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 24px;
+  }
+}
+.four-columns {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 24px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .three-columns > ul {
+    grid-template-columns: 1fr;
+  }
+  .four-columns > ul {
+    grid-template-columns: 1fr;
+  }
+}

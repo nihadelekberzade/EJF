@@ -40,6 +40,9 @@ body {
       }
     }
   }
+  @media only screen and (max-width: 500px) {
+    padding-bottom: 16px;
+  }
 }
 .dropdown {
   position: relative;
