@@ -28,3 +28,11 @@
 .pb-80 {
   padding-bottom: 80px;
 }
+.txt-dec-none {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+    }
+  }
+}

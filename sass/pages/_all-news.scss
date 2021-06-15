@@ -1,4 +1,13 @@
 .all-news {
+  a {
+    text-decoration: none;
+    & * {
+      text-decoration: initial;
+    }
+    &:hover {
+      color: inherit;
+    }
+  }
   .page-title {
     padding-bottom: 25px;
   }
@@ -32,6 +41,11 @@
   }
   &-list {
     margin-bottom: 45px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
     li:not(:last-child) {
       margin-bottom: 20px;
     }

@@ -1,5 +1,14 @@
 .partners {
   padding-bottom: 72px;
+  a {
+    text-decoration: none;
+    & * {
+      text-decoration: initial;
+    }
+    &:hover {
+      color: inherit;
+    }
+  }
   .partner {
     &__title {
       margin-bottom: 32px;
@@ -8,6 +17,9 @@
       margin-bottom: 64px;
       ul {
         display: flex;
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
       }
       li:not(:last-child) {
         margin-right: 90px;

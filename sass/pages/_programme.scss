@@ -34,12 +34,18 @@
       }
     }
   }
-  &-list {
-    & > li:not(:last-child) {
-      margin-bottom: 48px;
-    }
-  }
+
   .programme {
+    &-list {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+        & > li:not(:last-child) {
+          margin-bottom: 48px;
+        }
+      }
+    }
     &-item {
       display: flex;
       &__date {

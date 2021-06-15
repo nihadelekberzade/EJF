@@ -1,6 +1,9 @@
 .footer {
   background-color: #f1f1f1;
   color: #848f9a;
+  ul {
+    list-style: none;
+  }
   &-upper {
     display: flex;
     padding: 31px 0 26px;
