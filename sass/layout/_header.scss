@@ -1,8 +1,13 @@
 .header {
   color: #fff;
   font-size: 15px;
+  &__logo {
+    padding: 10px 0;
+  }
   ul {
     list-style: none;
+    padding-left: 0;
+    margin-left: 0;
   }
   &__inner {
     background-color: $clr-blue;
@@ -88,10 +93,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    &-second {
-      flex-basis: 809px;
-      align-self: start;
-    }
+
     .menu-list {
       display: flex;
     }
@@ -154,10 +156,6 @@
         }
       }
       &:first-child {
-        padding-right: 15px;
-        & > li:last-child {
-          margin-left: 72px;
-        }
         border-bottom: 1px solid rgba($color: #f8f8f8, $alpha: 0.2);
       }
     }
@@ -227,6 +225,9 @@
   }
 
   @media only screen and (max-width: 500px) {
+    &__logo {
+      padding: 0;
+    }
     &-upper-socials,
     &__phone,
     &-lower-second {
