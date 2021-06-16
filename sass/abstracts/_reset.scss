@@ -9,14 +9,22 @@ ul {
   padding-left: 15px;
   margin-left: 15px;
 }
-a:hover {
-  color: $clr-blue;
-}
-a,
+
 button {
-  color: inherit;
   display: inline-block;
 }
+a {
+  color: $clr-grey;
+  & > * {
+    color: $clr-black;
+    text-decoration: none;
+  }
+  &:hover {
+    color: $clr-blue;
+    text-decoration-color: transparent;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;

@@ -41,14 +41,14 @@
     }
   }
   & &-block {
-    padding: 35px 25px;
+    padding: 25px;
     border: 2px solid #f8f8f8;
     border-radius: 2px;
     &__header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-bottom: 36px;
+      margin-bottom: 25px;
       h2 {
         font-size: 18px;
       }
@@ -85,6 +85,8 @@
     &-list {
       ul {
         list-style: none;
+        margin-left: 0;
+        padding-left: 0;
       }
       li:not(:last-child) {
         margin-bottom: 18px;
