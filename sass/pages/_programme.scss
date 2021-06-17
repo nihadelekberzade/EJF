@@ -39,7 +39,6 @@
     padding-left: 0;
     margin-left: 0;
   }
-
   .programme {
     &-list {
       & > ul {
@@ -94,6 +93,36 @@
         }
         &:not(:last-child) {
           margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .tabs {
+      .tab {
+        flex: 1;
+        font-size: 14px;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+    .date-tabs {
+      margin-bottom: 20px;
+      .date-tab {
+        padding: 12px;
+        flex: 1;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+    .programme {
+      &-item {
+        flex-direction: column;
+        &__subtitle {
+          margin-bottom: 15px;
         }
       }
     }
