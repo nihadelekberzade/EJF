@@ -15,12 +15,14 @@ button {
 }
 a {
   color: $clr-blue;
+  text-decoration: none;
   & > * {
     color: $clr-black;
     text-decoration: none;
   }
   &:hover {
     color: $clr-blue;
+    text-decoration: underline;
   }
 }
 

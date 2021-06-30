@@ -1,0 +1,9 @@
+.swiper-pagination {
+  position: static !important;
+  padding: 10px 0;
+  &-bullet {
+    &-active {
+      background: $clr-blue !important;
+    }
+  }
+}
