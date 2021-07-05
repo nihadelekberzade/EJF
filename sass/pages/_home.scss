@@ -197,25 +197,26 @@
       }
     }
     &-item {
+     display: flex;
+     align-items: flex-end;
       img {
-        width: 100%;
-        height: 235px;
+        width: 150px;
+        height: 150px;
         object-fit: cover;
-      }
-      &__name {
-        font-size: 21px;
-        padding: 25px 35px 40px;
-        border-bottom: 1px solid #f2f3f3;
+        border-radius: 50%;
+        margin-right: 15px;
       }
       &__title {
-        padding: 24px 35px 38px;
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 13px;
         color: #77728f;
+        margin-bottom: 15px;
       }
-      &__content {
-        border: 1px solid #f2f3f3;
+      &__name {
+        font-size: 17px;        
       }
+          &__content {
+            min-width: 120px;
+          }
     }
   }
   .forum {
