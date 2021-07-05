@@ -91,7 +91,8 @@
       }
     }
     &-slider {
-      background: no-repeat #f8f8f8 url("../../img/icon/doubleQuotes.svg") top left;
+      background: no-repeat #f8f8f8 url("../../img/icon/doubleQuotes.svg") top
+        left;
       border-radius: 2px;
       background-position: 50px 50px;
       padding: 146px 0 87px;
@@ -197,8 +198,8 @@
       }
     }
     &-item {
-     display: flex;
-     align-items: flex-end;
+      display: flex;
+      align-items: flex-end;
       img {
         width: 150px;
         height: 150px;
@@ -212,11 +213,11 @@
         margin-bottom: 15px;
       }
       &__name {
-        font-size: 17px;        
+        font-size: 17px;
       }
-          &__content {
-            min-width: 120px;
-          }
+      &__content {
+        min-width: 120px;
+      }
     }
   }
   .forum {
@@ -224,7 +225,8 @@
     &__inner {
       padding: 40px 48px;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-      background: no-repeat url("../../img/home/Artboard\ 2@3x\ 1.png") right bottom;
+      background: no-repeat url("../../img/home/Artboard\ 2@3x\ 1.png") right
+        bottom;
       background-position-y: 20px;
       p {
         font-size: 16px;
@@ -409,6 +411,17 @@
     .partners .carousel__wrapper {
       max-width: 180px;
       margin: 0 auto;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home {
+    .speaker-item {
+      flex-direction: column;
+      text-align: center;
+      img {
+        margin: 0 auto 10px;
+      }
     }
   }
 }
